@@ -8,3 +8,6 @@ cd ~ && mkdir ffsubsync && cd ffsubsync
 python3 -m venv .venv
 source .venv/bin/activate
 pip install ffsubsync
+
+# Subtitles generation
+git clone https://github.com/cyberofficial/Synthalingua.git
