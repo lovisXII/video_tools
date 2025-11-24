@@ -12,6 +12,7 @@ if [[ "$1" == "--help" || "$1" == "-help" ]]; then
 fi
 
 # go to the directory to check
+echo "Moving to $DIR"
 cd $DIR
 for file in *; do
 	if ffprobe -v error -select_streams s -show_entries stream=index -of csv=p=0 "$file" | grep -q .; then
